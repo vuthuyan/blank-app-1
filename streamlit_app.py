@@ -142,7 +142,7 @@ st.write(new_model.predict(df))
 
 # Display a clearer output
 if prediction[0] == 1:
-    st.success("✅ Approved")
+    st.success("Approved")
 else:
-    st.error("❌ Denied")
+    st.error("Denied")
 
