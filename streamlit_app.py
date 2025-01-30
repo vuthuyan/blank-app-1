@@ -140,3 +140,9 @@ new_model = joblib.load("random_forest_model.pkl")
 new_model.predict(df)
 st.write(new_model.predict(df))
 
+# Display a clearer output
+if prediction[0] == 1:
+    st.success("✅ Approved")
+else:
+    st.error("❌ Denied")
+
